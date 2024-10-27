@@ -1,5 +1,5 @@
 
-* {
+*{
    box-sizing: border-box;
 }
 body, section, header, div, p, h1, h2, h3, ul, li, figure, figcaption {
@@ -14,3 +14,158 @@ body {
 }
 
 /* add styles here */
+header {
+   background-image: url('images/florence.jpg'); 
+   background-size: cover;
+   width: 100%;
+   min-height: 500px;
+}
+
+nav {
+   background-image: url('images/logo.png');
+   background-size: 40px;
+   background-repeat: no-repeat;
+   padding-left: 80px; 
+   height: 60px;
+}
+
+nav ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   width: 100%;
+}
+
+nav ul li {
+   display: inline-block;
+   margin-right: 20px; 
+}
+
+nav a {
+   text-decoration: none;
+   font-weight: bold;
+   color: #51279b; 
+}
+
+nav a:visited {
+   color: #666;
+}
+
+nav a:hover {
+   color: #007BFF; 
+}
+
+nav a:active {
+   color: #0056b3; 
+}
+
+header div {
+   margin: 0 auto;
+   padding-top: 200px;   
+   margin-left: 80px; 
+}
+
+header h2 {
+   color: white;
+   font-size: 48px;
+   margin-bottom: 10px;
+}
+
+header p {
+   color: white;
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+header div > a {
+   display: inline-block;
+   background-color: #51279B; 
+   color: white;
+   padding: 12px 25px;
+   border-radius: 5px;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+header div > a:hover {
+   background-color: #8662C7;
+}
+main {
+   display: flex;
+   gap: 1rem; 
+   padding: 20px;
+}
+
+.card {
+   flex: 1; 
+   box-sizing: border-box;
+   background-color: white;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+   width: 100%;
+   height: auto;
+}
+
+.card-content {
+   padding: 15px;
+   text-align: left;
+}
+.card h3 {
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.card .description {
+   font-size: 12px;
+   color: #666;
+   margin-bottom: 10px;
+}
+.social {
+   display: flex;
+   align-items: center;
+   font-size: 12px;
+   margin-top: 1rem;
+}
+
+.social span {
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding-left: 20px;
+   margin-right: 10px;
+}
+
+.social .heart {
+   background-image: url('images/heart.png'); 
+}
+
+.social .comment {
+   background-image: url('images/comment.png'); 
+}
+main {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+
+.card {
+   flex: 1;
+   min-width: 0;
+}
+body::after {
+   content: "© 2024 Arselan Khan - All rights reserved. 001312039";
+   display: block;
+   text-align: center;
+   padding: 10px;
+   background-color: #51279B; 
+   color: white;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+   font-size: 14px;
+}
